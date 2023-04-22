@@ -1,1 +1,0 @@
-# rma-training-rest-app

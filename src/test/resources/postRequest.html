@@ -1,0 +1,9 @@
+### Send POST request with json body
+# curl -X POST -H "Content-Type: application/json" -d '{"name": "lallora", "email": "lallora@mail.ru"}' http://localhost:8090/createGreeting
+POST http://localhost:8090/createGreeting
+Content-Type: application/json
+Accept: application/json
+x-trace-id: test-x-trace-id
+sourceSystem: rma-open-app
+
+{"clientId": 757765765765}
