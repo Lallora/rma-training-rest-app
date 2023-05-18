@@ -25,12 +25,14 @@ public class TrainingRestController {
     }
 
     @GetMapping(value = ENDPOINT_GET_TEST)
+    @CrossOrigin // CORS resolved
     public ResponseEntity<String> test() {
         log.info("{} started", Thread.currentThread().getStackTrace()[1].getMethodName());
         return new ResponseEntity<>("test Ok", HttpStatus.OK);
     }
 
     @PostMapping(value = "/createGreeting")
+    @CrossOrigin // CORS resolved
     public ResponseEntity<String> createGreeting(HttpServletRequest httpServletRequest, @RequestBody String json) {
         // Получение карты с заголовками запроса
         Map<String, String> requestHeadersMap = Collections.list(httpServletRequest.getHeaderNames())
