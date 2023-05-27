@@ -1,4 +1,4 @@
-package rma.training.rmatrainingrestapp.service;
+package rma.training.rmatrainingrestapp.config;
 
 public class AppConstants {
     private AppConstants() {

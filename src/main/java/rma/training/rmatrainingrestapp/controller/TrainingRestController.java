@@ -3,9 +3,7 @@ package rma.training.rmatrainingrestapp.controller;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,8 +11,9 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static rma.training.rmatrainingrestapp.service.AppConstants.ENDPOINT_GET_TEST;
-import static rma.training.rmatrainingrestapp.service.AppConstants.MSG_GREETINGS;
+import static rma.training.rmatrainingrestapp.config.AppConstants.ENDPOINT_GET_TEST;
+import static rma.training.rmatrainingrestapp.config.AppConstants.MSG_GREETINGS;
+
 
 @Slf4j
 @RestController
