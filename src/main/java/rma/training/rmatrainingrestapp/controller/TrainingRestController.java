@@ -41,7 +41,8 @@ public class TrainingRestController {
         String strXTraceId = requestHeadersMap.get("x-trace-id");
         // Пример использования Mapping Diagnostic Context
         MDC.put("TraceIdInMdcKey", strXTraceId);
-        log.info("Server got traceId: [{}] body: {}", MDC.get("TraceIdInMdcKey"), json);
+        //log.info("Server got traceId: [{}] body: {}", MDC.get("TraceIdInMdcKey"), json);
+        log.info("Server got a body: {}", json);
         MDC.clear();
         return new ResponseEntity<>("CREATED", HttpStatus.CREATED);
     }
